@@ -57,3 +57,11 @@ Please follow along as the instructor adds automated tests to the API.
     - just use the config variable DATABASE_URL as seen in the config variables in heroku
 
     - ensure that the correct client is installed. ours is pg(postgress) here
+
+## Populating the db
+- we need to populate the db using migrations to create a table
+- we can us the heroku cli to do this. overview -> more -> run console
+- run bash - this will give us a bash console running on my linux vm
+- run knex migrate:latest and now we have an empty table. table will show []
+- populate the db with seeds. run knex seed:run
+- now i can use this api url in postman for testing
