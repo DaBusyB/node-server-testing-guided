@@ -28,6 +28,7 @@ module.exports = {
     },
   },
 
+  //for heroku
   production: {
     client: "pg",
     connection: pgConnection,

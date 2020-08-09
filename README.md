@@ -32,3 +32,28 @@ Please follow along as the instructor adds automated tests to the API.
 
 
 ## Depoly to backend to heroku
+- create new app
+- name it and create app
+- connect to github repo and the correct branch
+- enable auto deploys
+- go to overview tab
+
+## If deploying SQLite db, heres how to create Postgress db in heroku and use that instead
+- resources tab
+- in add ons, type postgress and choose heroku postgress and provision
+- should see heroku postgress in add ons
+
+- our app on heroku now has a db, but were not using it yer
+- we connect to this one instead of sqlite thorugh dbconfig in the app through configuration variable db.env
+- db.env needs the production value
+- we add this value to heroku and make it production
+    - copy DB_ENV
+    - got to settings in heroku
+    - reveal config variables
+    - DB_ENV is the key and production is the value
+    - add
+    - we now have a db url
+    - dont use it, bc it changes frequently
+    - just use the config variable DATABASE_URL as seen in the config variables in heroku
+
+    - ensure that the correct client is installed. ours is pg(postgress) here
