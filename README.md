@@ -65,3 +65,8 @@ Please follow along as the instructor adds automated tests to the API.
 - run knex migrate:latest and now we have an empty table. table will show []
 - populate the db with seeds. run knex seed:run
 - now i can use this api url in postman for testing
+
+
+## Testing
+- the cross-env package helps us set the environment varible before running code
+- 
