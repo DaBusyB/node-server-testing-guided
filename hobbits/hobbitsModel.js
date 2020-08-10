@@ -20,8 +20,8 @@ function remove(id) {
   return db('hobbits').remove().where(id);
 }
 
-function getAll(hobbits) {
-  return db('hobbits').getAll(hobbits);
+function getAll() {
+  return db('hobbits').getAll();
 }
 
 function findById(id) {
